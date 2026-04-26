@@ -157,6 +157,18 @@ const DS=[
   {nm:'Diagonal',id:'diag'},{nm:'Minimal',id:'mini'}
 ];
 const DATA=[
+  {id:'stackfind',lbl:'⚡ StackFind',kw:'SF',topic:'Find Your AI Stack',cap:`Stop wasting hours Googling "best AI tools" 🔍\n\nIndia now has its own AI tools directory — and it's actually good.\n\n1,052+ tools. 38 categories. 77% free.\nBuilt for Indian builders, students & founders.\n\n👉 stack-find.vercel.app\n\nSave this if you've ever felt lost picking AI tools 🔖\n\n#StackFind #AITools #IndiaAI #AIDirectory #BuildWithAI #TechIndia #AIForIndia #StartupIndia #AIStack #FutureOfWork`,sl:[
+    {t:'STACKFIND',n:'',h:'1,052 AI\ntools.\nYou need 5.',tp:'cv',s:'India\'s only AI directory that actually helps you choose.'},
+    {t:'THE PROBLEM',n:'02',h:'You\'ve\nwasted\nhours.',tp:'rh',s:'10 tabs. 10 reviews. Still not sure which tool is right for you.',q:'There\'s a faster way →'},
+    {t:'THE PAIN',n:'03',h:'Most\nPeople\nStruggle',tp:'tx',s:'AI tools grow 3x every year. Nobody has time to test all of them.'},
+    {t:'FOR FREELANCERS',n:'04',h:'If You\'re\nA Freelancer',tp:'li',pts:['Filter by writing, design or video tools','77% of listed tools are free or freemium','Find Indian alternatives to expensive SaaS','Compare tools side by side — no affiliate noise']},
+    {t:'FOR FOUNDERS',n:'05',h:'If You\'re\nBuilding\nA Startup',tp:'my',mb:'BUILT IN INDIA',mr:'74+ Indian AI tools listed. Your entire stack could be made in India.'},
+    {t:'FOR DEVELOPERS',n:'06',h:'If You\'re\nA Developer',tp:'li',pts:['38 categories — find the right AI API fast','Discover tools before they go mainstream','Filter by use case: code, voice, image, video','One place — no paid placements, no noise']},
+    {t:'FOR STUDENTS',n:'07',h:'If You\'re\nLearning\nAI',tp:'my',mb:'THE PLAYGROUND',mr:'Try tools directly without creating 10 accounts. StackFind\'s Playground does it for you.'},
+    {t:'THE AHA',n:'08',h:'The\nReal\nInsight',tp:'ah',mb:'STOP SEARCHING. START BUILDING.',mr:'You don\'t need every AI tool. You need the right one in 60 seconds.'},
+    {t:'DO THIS NOW',n:'09',h:'Your\nNext\nMove',tp:'li',pts:['Go to stack-find.vercel.app','Search your use case — writing, coding, design','Filter by Free or Made in India','Launch the Playground and try before you commit']},
+    {t:'FOLLOW',n:'',h:'Save\nThis\nNow ⚡',tp:'ca',s:'New AI tools added every week. Follow so your stack never goes stale.'}
+  ]},
   {id:'tools',lbl:'🛠 Tools',kw:'VS',topic:'Claude vs ChatGPT',cap:'Which AI should you actually use? 🤔\nSave this before picking your daily tool 🔖\n\n#AI #ChatGPT #Claude #AItools #TechTips',sl:[
     {t:'AI TOOLS',n:'',h:'Claude\nvs\nChatGPT',tp:'cv',s:'Which one wins in 2025?'},
     {t:'BASICS',n:'01',h:'The Core\nDifference',tp:'li',pts:['ChatGPT by OpenAI — speed + breadth','Claude by Anthropic — depth + reasoning','Neither is universally better']},
@@ -897,6 +909,30 @@ Return ONLY raw JSON — no markdown fences, no commentary, just the JSON object
 {"cap":"full Instagram caption with hashtags","sl":[...10 slides...]}`;
 
 const PROMPTS={
+  stackfind:{label:'StackFind Use Cases',prompt:`Using the viral carousel framework, create a 10-slide carousel about StackFind — India's AI tools directory at stack-find.vercel.app.
+
+PRODUCT FACTS (use these specifically):
+- 1,052+ AI tools indexed across 38 categories
+- 74+ tools made in India — the largest collection of Indian AI tools
+- 77% of tools are free or freemium — no paywalls to discover
+- Has a Playground feature to try tools without signing up
+- Built for Indian students, freelancers, startup founders and developers
+- Solves the "which AI tool should I use?" problem for the Indian market
+- Categories include: writing, coding, image generation, voice, video, productivity, design
+
+USE CASE ANGLES (cover 4 of these in value slides):
+- Freelancer: find free alternatives to expensive western SaaS tools
+- Startup founder: build an all-India AI stack, discover 74+ made-in-India tools
+- Developer: find the right AI API for your project without the research rabbit hole
+- Student: use the Playground to try tools before committing to any account
+- Content creator: discover AI tools for video, image, writing — all free-first
+
+HOOK IDEA: "1,052 AI tools. You only need 5. Let us find yours."
+PAIN: Most people waste hours Googling tools, reading reviews, opening tabs — still unsure.
+AHA: You don't need to try every AI tool. You need the right one in 60 seconds. That's StackFind.
+CTA: Go to stack-find.vercel.app — it's free.
+
+Make it feel like insider knowledge for Indian builders. First-person punchy voice.`},
   tools:{label:'Claude vs ChatGPT',prompt:`Using the viral carousel framework, create a 10-slide carousel on: "Most people are using the wrong AI for their work — and it's costing them hours every week."
 
 TOPIC FACTS for deep specific content:
